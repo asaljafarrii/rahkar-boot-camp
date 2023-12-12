@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(4)</title>
+</head>
+<body>
+
+  <input type="number" id="numberInput" placeholder="Enter the number">
+  <button onclick="displayOddNumbers()">  Display odd numbers</button>
+
+  <p id="result"></p>
+
+  <script>
+    function displayOddNumbers() {
+      var number = document.getElementById('numberInput').value;
+      var result = "";
+
+      for (var i = 1; i <= number; i++) {
+        if (i % 2 !== 0) {
+          result += i + " ";
+        }
+      }
+
+      document.getElementById('result').innerHTML = "adad 1 ta" + number + " shamel: " + result + "hast";
+    }
+  </script>
+
+</body>
+</html>

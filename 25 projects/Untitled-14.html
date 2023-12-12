@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(14)</title>
+</head>
+<body>
+
+  <input type="text" id="inputNumber" placeholder="enter number">
+  <button onclick="countEvenDigits()">confirmation</button>
+
+  <p id="evenInEvenPosition"></p>
+  <p id="evenInOddPosition"></p>
+
+  <script>
+    function countEvenDigits() {
+      var input = document.getElementById('inputNumber').value;
+      var evenInEvenPos = 0;
+      var evenInOddPos = 0;
+
+      for (var i = 0; i < input.length; i++) {
+        if (i % 2 === 0) { 
+          if (parseInt(input[i]) % 2 === 0) {
+            evenInEvenPos++;
+          }
+        } else { 
+          if (parseInt(input[i]) % 2 === 0) {
+            evenInOddPos++;
+          }
+        }
+      }
+
+      document.getElementById('evenInEvenPosition').innerHTML 
+      document.getElementById('evenInOddPosition').innerHTML 
+    }
+  </script>
+
+</body>
+</html>

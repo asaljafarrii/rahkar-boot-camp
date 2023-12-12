@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(23)</title>
+</head>
+<body dir="rtl" , style="font-size: 30px;">
+
+  <h2>enter 1 ...365</h2>
+  <input type="number" id="inputNumber">
+  <button onclick="calculateDate()"> mohasebe tarikh</button>
+
+  <p id="outputDate"></p>
+
+  <script>
+    function calculateDate() {
+      var input = document.getElementById('inputNumber').value;
+      var dayOfYear = parseInt(input);
+
+      if (dayOfYear >= 1 && dayOfYear <= 365) {
+        var date = new Date(new Date().getFullYear(), 0); 
+        date.setDate(dayOfYear);
+
+        document.getElementById('outputDate').innerHTML = date.toDateString();
+      } else {
+        document.getElementById('outputDate').innerHTML 
+      }
+    }
+    </script>
+
+</body>
+</html>

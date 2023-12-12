@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(9) </title>
+</head>
+<body>
+
+  <input type="number" id="numberInput">
+  <button onclick="findDivisors()">confirmation</button>
+
+  <div id="result"></div>
+
+  <script>
+    function findDivisors() {
+      var number = document.getElementById('numberInput').value;
+      var result = "";
+      
+      for (var i = 1; i <= number; i++) {
+        if (number % i === 0) {
+          result += i + " ";
+        }
+      }
+
+      if (result === "") {
+        document.getElementById('result').innerHTML
+      } else {
+        document.getElementById('result').innerHTML 
+      }
+    }
+  </script>
+
+</body>
+</html>
